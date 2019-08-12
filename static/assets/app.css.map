@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,QACE,UAAW,CACX,WAAc","file":"app.css","sourcesContent":["section {\n  width: 50vw;\n  height: 50vh; }\n"]}

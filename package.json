@@ -1,0 +1,32 @@
+{
+  "name": "cobalt-website",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.19",
+    "@fortawesome/free-brands-svg-icons": "5.9.0",
+    "@fortawesome/free-solid-svg-icons": "5.9.0",
+    "@typopro/web-iosevka": "3.7.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "autoprefixer": "9.6.1",
+    "babel-loader": "8.0.6",
+    "concurrently": "4.1.1",
+    "css-loader": "3.1.0",
+    "file-loader": "4.1.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.1.0",
+    "uglifyjs-webpack-plugin": "2.1.3",
+    "webpack": "4.36.1",
+    "webpack-cli": "3.3.6"
+  },
+  "scripts": {
+    "build": "webpack && hugo",
+    "clean": "rm -rf public/",
+    "lint": "eslint --ext js --fix ui/",
+    "serve": "concurrently --kill-others 'webpack --watch' 'hugo server --watch'"
+  }
+}

@@ -1,0 +1,25 @@
+{{ template "partials/header.html" . }}
+<header>
+    <img alt="Cobalt Core" src="/assets/logo.png">
+</header>
+<main class="index">
+    {{- range sort (where .Site.Pages "Type" "=" "tile") "Params.index" }}
+    <section class="{{ .File.TranslationBaseName }}">{{ .Content }}</section>
+    {{- end }}
+</main>
+<footer>
+    <div>
+        <span class="fas fa-language"></span>
+        <ul class="language">
+            {{- $currentPage := . }}{{ range .AllTranslations }}
+            <li{{ if eq $currentPage.Language .Language }} class="active"{{ end }}>
+                <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+            </li>
+            {{- end }}
+        </ul>
+    </div>
+    <div>
+        Copyright &copy; 2019 Cobalt Core
+    </div>
+</footer>
+{{ template "partials/footer.html" . }}

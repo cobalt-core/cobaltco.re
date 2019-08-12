@@ -1,0 +1,19 @@
+---
+baseURL: https://cobaltco.re/
+title: Cobalt Core
+
+languages:
+  en:
+    languageName: EN
+  fr:
+    languageName: FR
+
+cleanDestinationDir: true
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+disableHugoGeneratorInject: true
+disableKinds:
+- RSS
+metaDataFormat: yaml
+
+# vim: ts=2 sw=2 et
