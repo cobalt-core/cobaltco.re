@@ -12,6 +12,8 @@ automation and monitoring/observability.
 
 * {{< icon name="envelope" style="s" >}} [Email][mailto]
 * {{< icon name="linkedin" style="b" >}} [LinkedIn][linkedin]
+* {{< malt-svg >}} [Malt][malt]
 
 [linkedin]: https://www.linkedin.com/company/cobalt-core
 [mailto]: mailto:contact@cobaltco.re
+[malt]: https://www.malt.fr/profile/marcfalzon
