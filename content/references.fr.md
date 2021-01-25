@@ -5,6 +5,9 @@ index: 2
 
 # Références
 
+* [{{< figure alt="logo" src="/assets/ref-regate.png" >}}
+  Régate](https://www.regate.io/): Audit d'infrastructure, déploiement
+  d'infrastructure cloud, automatisation CI/CD (GCP)
 * [{{< figure alt="logo" src="/assets/ref-exoscale.png" >}}
   Exoscale](https://www.exoscale.com/) : développement système plateforme cloud
   et outils utilisateurs, ergonomie interfaces utilisateur, rédaction technique
