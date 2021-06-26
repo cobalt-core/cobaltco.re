@@ -1,0 +1,19 @@
+name: Docker
+
+on: [push]
+
+jobs:
+  Docker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: |-
+        SHA=$(echo $GITHUB_SHA | cut -c 1-7)
+        echo -n ${{ secrets.GH_TOKEN }} | docker login ghcr.io -u falzm --password-stdin
+        docker build -t ghcr.io/cobalt-core/cobaltco.re:${SHA} .
+        docker tag ghcr.io/cobalt-core/cobaltco.re:${SHA} ghcr.io/cobalt-core/cobaltco.re:latest
+        docker push ghcr.io/cobalt-core/cobaltco.re:${SHA}
+        docker push ghcr.io/cobalt-core/cobaltco.re:latest
